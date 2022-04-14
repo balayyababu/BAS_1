@@ -13,7 +13,7 @@ sap.ui.define([
 
             },
             _Save: function () {
-                MessageToast.show("Save Button Pressed", { at: sap.ui.core.Popup.Dock.CenterTop });
+                MessageToast.show("Save Button Pressed.", { at: sap.ui.core.Popup.Dock.CenterTop });
             },
             _Change: function () {
                 MessageToast.show("Chnage Button Pressed.", { at: sap.ui.core.Popup.Dock.RightBottom });
