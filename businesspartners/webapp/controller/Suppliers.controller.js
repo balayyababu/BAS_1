@@ -16,7 +16,7 @@ sap.ui.define([
                 MessageToast.show("Save Button Pressed", { at: sap.ui.core.Popup.Dock.CenterTop });
             },
             _Change: function () {
-                MessageToast.show("Chnage Button Pressed", { at: sap.ui.core.Popup.Dock.RightBottom });
+                MessageToast.show("Chnage Button Pressed.", { at: sap.ui.core.Popup.Dock.RightBottom });
             },
             _Display: function () {
                 MessageToast.show("Dislay Button Pressed", { at: sap.ui.core.Popup.Dock.LeftBottom });
