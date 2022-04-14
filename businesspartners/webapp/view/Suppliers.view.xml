@@ -1,0 +1,31 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ns.businesspartners.controller.Suppliers" displayBlock="true">
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>title}">
+                    <content>
+                        <List id="Suppliers_List_ID"  items="{/BusinessPartnerSet}">
+                            <items>
+                                <StandardListItem id="Supplier_Standard_List_item" type="Navigation" title="{CompanyName}" description="{WebAddress}" icon="sap-icon://picture">
+                                </StandardListItem>
+                            </items>
+                        </List>
+                    </content>
+                    <footer>
+                        <Bar id="bar0">
+                            <contentRight>
+                                <Button press="_Save" text="Save" icon="sap-icon://save" id="Suppliers_Button_Save"/>
+                            </contentRight>
+                            <contentMiddle>
+                                <Button press="_Change" text = "Change" icon="sap-icon://edit" id="Suppliers_Button_Change"/>
+                            </contentMiddle>
+                            <contentLeft>
+                                <Button press="_Display" text="Display" icon="sap-icon://display" id="Suppliers_Button_Display"/>
+                            </contentLeft>
+                        </Bar>
+                    </footer>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
